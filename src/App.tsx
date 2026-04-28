@@ -13,6 +13,11 @@ import CategoriesIndex from "./pages/CategoriesIndex";
 import SearchPage from "./pages/SearchPage";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound.tsx";
+import QuemSomos from "./pages/QuemSomos";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import TrocasDevolucoes from "./pages/TrocasDevolucoes";
+import PrazoEntrega from "./pages/PrazoEntrega";
+import ComoComprar from "./pages/ComoComprar";
 
 const queryClient = new QueryClient();
 
@@ -32,12 +37,18 @@ const App = () => (
                 <Route path="/produto/:id" element={<ProductPage />} />
                 <Route path="/busca" element={<SearchPage />} />
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/quem-somos" element={<QuemSomos />} />
+                <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
+                <Route path="/trocas-e-devolucoes" element={<TrocasDevolucoes />} />
+                <Route path="/prazo-de-entrega" element={<PrazoEntrega />} />
+                <Route path="/como-comprar" element={<ComoComprar />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
           </CartProvider>
         </WishlistProvider>
-      </BrowserRouter>
+      </Toaster>
+    </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
