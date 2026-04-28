@@ -1,9 +1,11 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileBottomBar } from "./MobileBottomBar";
 import { BackToTop } from "./BackToTop";
 import { CartDrawer } from "@/components/cart/CartDrawer";
+import { WhatsAppButton } from "@/components/trust/WhatsAppButton";
+import { CookieBanner } from "@/components/trust/CookieBanner";
 
 export const Layout = () => (
   <div className="min-h-screen flex flex-col">
@@ -15,5 +17,7 @@ export const Layout = () => (
     <MobileBottomBar />
     <BackToTop />
     <CartDrawer />
+    <WhatsAppButton />
+    <CookieBanner />
   </div>
 );
