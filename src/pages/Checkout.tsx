@@ -9,6 +9,7 @@ import { formatBRL } from "@/data/catalog";
 import { Check, ChevronRight, CreditCard, Lock, MapPin, Package, ShoppingBag } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "@/hooks/use-toast";
+import { TrustBadge, PaymentIcons } from "@/components/trust/TrustBadge";
 
 const steps = [
   { key: "cart", label: "Carrinho", icon: ShoppingBag },
